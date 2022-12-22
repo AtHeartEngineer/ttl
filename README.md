@@ -17,8 +17,16 @@ We want to be able to make some guarantees about the TTL of a message:
 
 ### Semaphore Approach
 
-1. Use semaphore to prove their id commitment is registered.
+* Use semaphore to prove their id commitment is registered.
     * There is some nuance here since we will be dealing with multiple registration "tiers".
     * TODO! Should a user, when they register, be included in all the lower registration tiers? Or should a proof input specify the registration tier?
-2. Use a circuit to prove that the TTL was incremented by 1.
-3.
+* Use a circuit to prove that the TTL was incremented by 1.
+* Prove that each hop was done by a unique idcommitment.
+
+### Recursive Snarks?
+
+Use a recursive snark to prove that the TTL was incremented by 1 for each hop by a unique idcommitment?
+
+### BLS Signatures?
+
+Aggregate BLS signatures per hop?
