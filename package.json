@@ -1,0 +1,21 @@
+{
+  "name": "ttl-circuit",
+  "version": "0.1.0",
+  "description": "A simple circuit to prove that a value has been decremented by a certain identifier",
+  "scripts": {
+    "build": "bash scripts/build-circuits.sh rln",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "#readme",
+  "devDependencies": {
+    "circomlib": "^2.1.2",
+    "snarkjs": "^0.5.0"
+  }
+}
