@@ -2,7 +2,7 @@
 
 This is a circuit that will prove that a peer in a decentralized network has incremented a TTL before forwarding a message.
 
-This is part of a larger project idea we are exploring [here](https://hackmd.io/dX1qoy6cTtSXJ7TdB8muIw#TTL)
+This is part of a larger project (zk-chat) and is just an idea we are exploring [here](https://hackmd.io/dX1qoy6cTtSXJ7TdB8muIw#TTL)
 
 ## Problem(s)
 
