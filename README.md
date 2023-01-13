@@ -1,10 +1,10 @@
-# TTL Proof
+## TTL Proof
 
 This is a circuit that will prove that a peer in a decentralized network has incremented a TTL before forwarding a message.
 
 This is part of a larger project (zk-chat) and is just an idea we are exploring [here](https://hackmd.io/dX1qoy6cTtSXJ7TdB8muIw#TTL)
 
-## Problem(s)
+### Problem(s)
 
 In order to enforce a TTL on an anonymous message, you need to prove that each hop is accounted for.
 
@@ -21,9 +21,9 @@ The data that is available to each peer is the following:
 3. Any previous TTL proofs that have been made
    * These could be appended to the message, or we can make a recursive snark, or use BLS signatures
 
-## Approaches
+### Approaches
 
-### Semaphore Approach
+#### Semaphore Approach
 
 * Use Semaphore to prove their id commitment is registered.
     * There is some nuance here since we will be dealing with multiple registration "tiers".
@@ -32,11 +32,6 @@ The data that is available to each peer is the following:
 * Prove that each hop was done by a unique `idcommitment`.
   * *How do we do this?*
 
-### Recursive Snarks?
+#### Recursive Snarks?
 
 Use a recursive snark to prove that the TTL was incremented by 1 for each hop by a unique `idcommitment`?
-
-### BLS Signatures?
-
-Aggregate BLS signatures per hop?
-* This degrades privacy, as any recipient can see who signed off on the message while it was being passed around, and you can figure out the path of the message.
